@@ -1,0 +1,142 @@
+html,body,div,span,h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+*{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+body{
+    background-color: #A93226;
+}
+header{
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    grid-template-rows: 100px;
+    background-color: #641E16
+}
+.gambarheadline{
+    grid-column: 1;
+    grid-row : 1 / span 2;
+    align-items: center;
+}
+.teksheadline{
+    grid-column: 2;
+    grid-row: 1;
+    font-size: xx-large;
+    color:#F5B041;
+    align-self:end;
+}
+.descheadline{
+    grid-column: 2;
+    grid-row : 2;
+    color:#F5B041;
+    font-size: large;
+}
+.tabelheadline{
+    height: 30%;
+}
+.kolomnavigasi{
+    padding:10px;
+    display: flex;
+    background-color: #F5B041;
+    flex-direction: row-reverse;
+    /* justify-content: flex-end; */
+}
+.kolomnavigasi:hover{
+    color: navy;
+}
+
+h2{
+    /* margin: 10px; */
+    padding:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width:fit-content; 
+    background-color: #641E16; 
+}
+.wrapper_tentang{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40vh;
+    border: 0px solid black;
+    border-radius: 20px;
+}
+.paragraf_tentang{
+    grid-column: 1;
+    grid-row: 1;
+    text-align: justify;
+    background-color: #F5B041;
+    padding: 30px;
+   
+}
+.video_tentang{
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;    
+}
+.logo_tentang {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.tabel_pengalaman{
+    border: 1pt;
+    border-collapse: collapse;
+    border-color: wheat;
+}
+
+th{
+    border: 1px solid;
+    border-color: wheat;
+    background-color: #F5B041;
+    color: #641E16;
+}
+table,tr,td{
+    border: 1px solid;
+    text-align: center;
+    padding: 5pt;
+}
+form{
+    margin-left: 40px;
+    background-color: #641E16;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+}
+#inputnama{
+    width: 20vw;
+    background-color: #f7e7ce;
+    padding: px;
+    border: 0px;
+    border-radius: 3px;
+
+}
+#inputnonton{
+    display: flex;
+    flex-direction: row;
+}
+#tombol_kirim{
+    background-color: #F5B041;
+    padding: 5px;
+    border: 0px;
+    border-radius: 7px;
+    width: 100%;
+}
+#tombol_kirim:hover{
+    background-color: #cf8000;
+}
+footer{
+    width:vw;
+    background-color: #cf8000;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 20px;
+}
