@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prak P4</title>
+    <link rel="stylesheet" href="css/tugas.css">
+</head>
+<body>
+    <header>
+        <div class="gambarheadline">
+            <img style="width:  146px" src="Assets/profilepic_png.png" alt="profilepic">
+        </div>
+        <div class="teksheadline">
+            <h1 style="color:var(--cream)">Halo! Saya Radit.</h1>
+        </div>
+        <div class="descheadline">
+            <p style="color:var(--cream)">Seorang Mahasiswa Semester 5 yang masih planga-plongo kalo ditanya "Pengalaman kamu apa aja?"</p>
+        </div>
+    </header>
+    <div id="kolomnavigasi">
+        <a href="#tentang" style="margin-inline: 10pt; text-decoration:none ; font-weight:bold;">TENTANG SAYA</a>
+        <a href="#pengalaman" style="margin-inline: 10pt; text-decoration:none ; font-weight:bold;">PENGALAMAN KERJA</a>
+        <a href="#hubungi" style="margin-inline: 10pt; text-decoration:none ; font-weight:bold;">HUBUNGI SAYA</a>
+        <button id="togglemode">LIGHT / DARK MODE</button>
+    
+    </div>
+    <h2 id="tentang"># TENTANG SAYA</h2>
+    <div class="wrapper_tentang">
+        <div class="paragraf_tentang">
+            <div class="logo_tentang"><img style="width: 150px;" src="Assets/icon.png" alt="ppradit"></div>
+            <p style="color: var(--black);font-weight: 500;">Saya adalah seorang mahasiswa Semester 5 Teknik Informatika Institut Teknologi Sumatera (ITERA), saya memandang diri saya sebagai orang yang sangat antusias untuk 
+                mempelajari segala macam hal yang berkaitan dengan tujuan saya. Ambisi terbesar saya adalah bisa berkontribusi untuk berinovasi dalam teknologi keamanan
+                berkendara pada sebuah perusahaan kendaraan. Saya meyakini bahwa diri saya mudah beradaptasi pada lingkungan yang baru, selalu memberikan yang terbaik
+                pada pekerjaan yang diberikan kepada saya, dan selalu mencoba memberikan manfaat bagi orang-orang di sekitar saya.
+            </p>
+        </div>
+        <div class="video_tentang">
+            <figure>
+                <video width="" height="240" controls poster="Assets/aboutme.png">
+                    <source src="Assets/Rick Rolled (Short Version).mp4" type="video/mp4">
+                    This video is not supported
+                </video>
+                <figcaption>video tentang saya</figcaption> 
+            </figure>
+        </div>
+    </div>
+    <div>
+        <h2 id="pengalaman"># PENGALAMAN KERJA</h2>
+        <table class="tabel_pengalaman">
+            <tr>
+                <th rowspan="2">No</th>
+                <th rowspan="2">Posisi</th>
+                <th rowspan="2">Perusahaan</th>
+                <th colspan="2">Waktu</th>
+            </tr>
+            <tr>
+                <th>Mulai</th>
+                <th>Selesai</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Kerjaan Satu</td>
+                <td>Prusahaan Satu</td>
+                <td>Mulai Kapan</td>
+                <td>Beres Kapan</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Kerjaan Dua</td>
+                <td>Prusahaan Dua</td>
+                <td>Mulai Kapan</td>
+                <td>Beres Kapan</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2 id="hubungi"># HUBUNGI SAYA</h2>
+    <div>
+        <form action="#" method="post">
+            <div>
+                <label for="nama">Nama:</label>
+                <br>
+                <input type="text" name="nama" id="inputnama">
+            </div>
+            <br>
+            <p>Menghubungi saya atas keperluan</p>
+            <div id="perluapa">
+                <input type="radio" name="cekmauapa" value="belumtau">
+                <label for="belum" style="margin-right: 20px;">belum tau mau ngapain</label>
+                <input type="radio" name="cekmauapa" value="udahtau">
+                <label for="sudah" >sudah tau mau ngapain</label>
+                <br>
+            </div>
+        
+            <div>
+                <br>
+                <p>Jadi gimana...</p>
+                <input style="margin-right: 10px;" type="checkbox" name="ini" id="ini">
+                <label for="ini">gini</label>
+                <input style="margin-right: 10px;" type="checkbox" name="anu" id="anu">
+                <label for="anu">anu</label>
+                <input style="margin-right: 10px;" type="checkbox" name="itu" id="itu">
+                <label for="itu">nah gitu</label>
+            </div>
+            <br>
+            <div>
+                <input id="tombol_kirim" type="submit" value="KIRIM">
+                
+            </div>
+        </form>
+    </div>
+
+
+    <footer>
+        <p style="font-weight: 700; color:var(--grey)">Muhammad Fida Raditya - 037</p>
+    </footer>
+    
+    <script src="script.js" type="module"></script>
+</body>
+</html>
